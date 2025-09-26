@@ -3,147 +3,198 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UPYA | Uwezo Pamoja Youths Association</title>
+  <title>UPYA – Uwezo Pamoja Youths Association</title>
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- AOS Animation Library -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a2d9d6a64d.js" crossorigin="anonymous"></script>
 </head>
-<body class="font-sans text-gray-900">
+<body class="font-sans text-gray-800">
 
-  <!-- Hero Section -->
-  <section class="h-screen bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 flex items-center justify-center text-center text-white" id="home">
+  <!-- Navbar -->
+  <header class="fixed w-full bg-white shadow-md z-50">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-blue-700">UPYA</h1>
+      <ul class="hidden md:flex space-x-6 font-medium">
+        <li><a href="#hero" class="hover:text-blue-600">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-600">About</a></li>
+        <li><a href="#objectives" class="hover:text-blue-600">Objectives</a></li>
+        <li><a href="#events" class="hover:text-blue-600">Events</a></li>
+        <li><a href="#executives" class="hover:text-blue-600">Executives</a></li>
+        <li><a href="#gallery" class="hover:text-blue-600">Gallery</a></li>
+        <li><a href="#testimonials" class="hover:text-blue-600">Testimonials</a></li>
+        <li><a href="#membership" class="hover:text-blue-600">Membership</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="h-screen flex items-center justify-center text-center bg-gradient-to-r from-blue-700 via-purple-600 to-pink-500 text-white">
     <div data-aos="fade-up">
-      <h1 class="text-5xl font-bold mb-4">Uwezo Pamoja Youths Association</h1>
-      <p class="text-xl mb-6">Defining the Undefined</p>
-      <a href="#membership" class="px-6 py-3 bg-white text-blue-600 font-semibold rounded-full shadow hover:bg-gray-200">Become a Member</a>
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Uwezo Pamoja Youths Association</h2>
+      <p class="text-lg md:text-2xl italic mb-6">Defining the Undefined</p>
+      <a href="#about" class="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">Learn More</a>
     </div>
   </section>
 
-  <!-- About & Objectives -->
-  <section class="py-16 px-6 bg-gray-50" id="about">
-    <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6">About Us</h2>
-      <p class="mb-4">Mission: To empower, equip, mentor and nurture tomorrow's world.</p>
-      <p class="mb-4">Vision: Creating an environment that cultivates positive impact to the community.</p>
-      <h3 class="text-2xl font-semibold mt-10 mb-4">Core Values</h3>
-      <p>Teamwork • Integrity • Transparency • Accountability • Equity</p>
+  <!-- About -->
+  <section id="about" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">About Us</h2>
+      <p class="max-w-2xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+        Uwezo Pamoja Youths Association (UPYA) is dedicated to empowering, equipping, mentoring, 
+        and nurturing tomorrow’s world. We strive to create an environment that cultivates positive 
+        impact in the community.
+      </p>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <div class="p-6 bg-white shadow rounded-lg" data-aos="fade-right">
+          <h3 class="font-bold text-xl mb-2">Mission</h3>
+          <p>To empower, equip, mentor, and nurture tomorrow's world.</p>
+        </div>
+        <div class="p-6 bg-white shadow rounded-lg" data-aos="fade-left">
+          <h3 class="font-bold text-xl mb-2">Vision</h3>
+          <p>Creating an environment that cultivates positive impact in the community.</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 mt-12">
-      <div class="p-6 bg-white shadow rounded-lg" data-aos="fade-right">
-        <h4 class="text-xl font-bold mb-2">Youth Empowerment</h4>
-        <p>Creating opportunities for young people to thrive in society.</p>
-      </div>
-      <div class="p-6 bg-white shadow rounded-lg" data-aos="fade-up">
-        <h4 class="text-xl font-bold mb-2">Community Service</h4>
-        <p>Fostering responsibility through active participation in community projects.</p>
-      </div>
-      <div class="p-6 bg-white shadow rounded-lg" data-aos="fade-left">
-        <h4 class="text-xl font-bold mb-2">Mentorship</h4>
-        <p>Guiding the youth towards positive impact and leadership growth.</p>
+  <!-- Objectives -->
+  <section id="objectives" class="py-16 bg-blue-700 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6" data-aos="zoom-in">Our Core Values</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-blue-800 rounded-lg shadow" data-aos="zoom-in">Teamwork</div>
+        <div class="p-6 bg-blue-800 rounded-lg shadow" data-aos="zoom-in" data-aos-delay="150">Integrity & Transparency</div>
+        <div class="p-6 bg-blue-800 rounded-lg shadow" data-aos="zoom-in" data-aos-delay="300">Accountability & Equity</div>
       </div>
     </div>
   </section>
 
   <!-- Events -->
-  <section class="py-16 px-6 bg-white" id="events">
-    <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6">Upcoming Events</h2>
+  <section id="events" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Upcoming Events</h2>
       <div class="grid md:grid-cols-3 gap-6">
-        <div class="p-6 bg-gray-50 shadow rounded-lg" data-aos="zoom-in">
-          <h4 class="text-xl font-semibold mb-2">Community Cleanup</h4>
-          <p>October 15, 2025 - Kisumu Town</p>
+        <div class="bg-white p-6 rounded-lg shadow" data-aos="fade-right">
+          <h3 class="font-semibold text-xl mb-2">Youth Mentorship Camp</h3>
+          <p class="text-sm text-gray-600">December 10, 2025</p>
+          <p class="mt-2">An inspiring 3-day camp focused on leadership and personal growth.</p>
         </div>
-        <div class="p-6 bg-gray-50 shadow rounded-lg" data-aos="zoom-in">
-          <h4 class="text-xl font-semibold mb-2">Youth Mentorship Forum</h4>
-          <p>November 2, 2025 - Nairobi</p>
+        <div class="bg-white p-6 rounded-lg shadow" data-aos="fade-up">
+          <h3 class="font-semibold text-xl mb-2">Community Clean-up</h3>
+          <p class="text-sm text-gray-600">January 15, 2026</p>
+          <p class="mt-2">Join us in creating a cleaner, greener environment for our people.</p>
         </div>
-        <div class="p-6 bg-gray-50 shadow rounded-lg" data-aos="zoom-in">
-          <h4 class="text-xl font-semibold mb-2">Charity Drive</h4>
-          <p>December 10, 2025 - Mombasa</p>
+        <div class="bg-white p-6 rounded-lg shadow" data-aos="fade-left">
+          <h3 class="font-semibold text-xl mb-2">Youth Innovation Forum</h3>
+          <p class="text-sm text-gray-600">March 20, 2026</p>
+          <p class="mt-2">A platform for youths to showcase innovative solutions for the future.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Executives -->
-  <section class="py-16 px-6 bg-gray-50" id="executives">
-    <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6">Our Executive Team</h2>
+  <section id="executives" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Our Executives</h2>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow" data-aos="fade-right">
-          <img src="exec1.jpg" alt="Chairperson" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
-          <h4 class="text-xl font-semibold">John Doe</h4>
-          <p class="text-gray-600">Chairperson</p>
+        <div class="bg-white p-6 rounded-lg shadow" data-aos="fade-up" data-aos-delay="100">
+          <img src="images/executive1.jpg" alt="Executive 1" class="w-32 h-32 mx-auto rounded-full object-cover">
+          <h3 class="font-semibold mt-4">Jane Doe</h3>
+          <p class="text-sm text-gray-600">Chairperson</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow" data-aos="fade-up">
-          <img src="exec2.jpg" alt="Secretary" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
-          <h4 class="text-xl font-semibold">Mary Jane</h4>
-          <p class="text-gray-600">Secretary</p>
+        <div class="bg-white p-6 rounded-lg shadow" data-aos="fade-up" data-aos-delay="200">
+          <img src="images/executive2.jpg" alt="Executive 2" class="w-32 h-32 mx-auto rounded-full object-cover">
+          <h3 class="font-semibold mt-4">John Doe</h3>
+          <p class="text-sm text-gray-600">Vice Chairperson</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow" data-aos="fade-left">
-          <img src="exec3.jpg" alt="Treasurer" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
-          <h4 class="text-xl font-semibold">Peter Smith</h4>
-          <p class="text-gray-600">Treasurer</p>
+        <div class="bg-white p-6 rounded-lg shadow" data-aos="fade-up" data-aos-delay="300">
+          <img src="images/executive3.jpg" alt="Executive 3" class="w-32 h-32 mx-auto rounded-full object-cover">
+          <h3 class="font-semibold mt-4">Sarah Kim</h3>
+          <p class="text-sm text-gray-600">Treasurer</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Gallery -->
-  <section class="py-16 px-6 bg-white" id="gallery">
-    <div class="max-w-6xl mx-auto text-center" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6">Gallery</h2>
+  <section id="gallery" class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Our Gallery</h2>
       <div class="grid md:grid-cols-3 gap-4">
-        <img src="gallery1.jpg" alt="Gallery 1" class="w-full h-64 object-cover rounded shadow" data-aos="zoom-in">
-        <img src="gallery2.jpg" alt="Gallery 2" class="w-full h-64 object-cover rounded shadow" data-aos="zoom-in">
-        <img src="gallery3.jpg" alt="Gallery 3" class="w-full h-64 object-cover rounded shadow" data-aos="zoom-in">
+        <img src="images/gallery1.jpg" class="rounded-lg shadow-lg object-cover w-full h-64" alt="Gallery 1" data-aos="zoom-in">
+        <img src="images/gallery2.jpg" class="rounded-lg shadow-lg object-cover w-full h-64" alt="Gallery 2" data-aos="zoom-in" data-aos-delay="150">
+        <img src="images/gallery3.jpg" class="rounded-lg shadow-lg object-cover w-full h-64" alt="Gallery 3" data-aos="zoom-in" data-aos-delay="300">
       </div>
     </div>
   </section>
 
   <!-- Testimonials -->
-  <section class="py-16 px-6 bg-purple-50" id="testimonials">
-    <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6">Testimonials</h2>
-      <p class="mb-4">"UPYA changed my life by connecting me with mentors who truly care." – Sarah</p>
-      <p>"Through UPYA, I found purpose in giving back to my community." – Kevin</p>
+  <section id="testimonials" class="py-16 bg-purple-600 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Testimonials</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-purple-700 p-6 rounded-lg shadow" data-aos="fade-up">
+          <p>"UPYA has changed my life by giving me mentorship and opportunities."</p>
+          <h4 class="mt-4 font-semibold">Mary Atieno</h4>
+        </div>
+        <div class="bg-purple-700 p-6 rounded-lg shadow" data-aos="fade-up" data-aos-delay="150">
+          <p>"I gained leadership skills and confidence to impact my community."</p>
+          <h4 class="mt-4 font-semibold">John Otieno</h4>
+        </div>
+        <div class="bg-purple-700 p-6 rounded-lg shadow" data-aos="fade-up" data-aos-delay="300">
+          <p>"I love being part of a team that empowers the youth to grow."</p>
+          <h4 class="mt-4 font-semibold">Achieng Faith</h4>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Membership Form -->
-  <section class="py-16 px-6 bg-gray-50" id="membership">
-    <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6">Become a Member</h2>
-      <p class="mb-6">Fill the form below to join UPYA</p>
-      <iframe src="YOUR_GOOGLE_FORM_LINK" width="100%" height="600" frameborder="0" class="rounded-lg shadow"></iframe>
+  <!-- Membership -->
+  <section id="membership" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Become a Member</h2>
+      <p class="mb-4" data-aos="fade-up" data-aos-delay="100">
+        Join UPYA today and be part of a movement shaping the future. Fill out the membership form below:
+      </p>
+      <a href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank" class="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition" data-aos="zoom-in">
+        Fill Membership Form
+      </a>
     </div>
   </section>
 
   <!-- Contact -->
-  <section class="py-16 px-6 bg-white" id="contact">
-    <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
-      <p>Email: <a href="mailto:upyakenya001@gmail.com" class="text-blue-600">upyakenya001@gmail.com</a></p>
-      <p>WhatsApp: <a href="https://wa.me/254742717364" class="text-green-600">0742717364</a></p>
-      <div class="flex justify-center space-x-6 mt-6">
-        <a href="https://www.facebook.com/UPYA.kenya" class="text-blue-600 text-2xl"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/UPYA.kenya" class="text-pink-500 text-2xl"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@UPYA.kenya" class="text-red-600 text-2xl"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.tiktok.com/@UPYA.kenya" class="text-black text-2xl"><i class="fab fa-tiktok"></i></a>
+  <section id="contact" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Contact Us</h2>
+      <p class="mb-4" data-aos="fade-up">Email: <a href="mailto:upyakenya001@gmail.com" class="text-blue-600">upyakenya001@gmail.com</a></p>
+      <p class="mb-4" data-aos="fade-up" data-aos-delay="150">WhatsApp: <a href="https://wa.me/254742717364" class="text-green-600">+254 742 717 364</a></p>
+      <div class="flex justify-center space-x-6 text-2xl" data-aos="zoom-in">
+        <a href="https://facebook.com/UPYA.kenya" class="text-blue-600"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/UPYA.kenya" class="text-pink-500"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com/UPYA.kenya" class="text-red-600"><i class="fab fa-youtube"></i></a>
+        <a href="https://tiktok.com/@UPYA.kenya" class="text-black"><i class="fab fa-tiktok"></i></a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-6 text-center">
-    <p>&copy; 2025 UPYA - Uwezo Pamoja Youths Association. All Rights Reserved.</p>
+  <footer class="bg-blue-700 text-white text-center py-4">
+    <p>&copy; 2025 UPYA – Uwezo Pamoja Youths Association. All rights reserved.</p>
   </footer>
 
-  <!-- AOS Init -->
+  <!-- AOS Script -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
   </script>
 </body>
 </html>
